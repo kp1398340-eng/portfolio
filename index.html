@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krishna Gadhiya - Python Developer Portfolio">
+    <title>Krishna Gadhiya | Portfolio</title>
+    
+    <!-- Google Fonts: Inter for Apple-inspired UI -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">KG.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-link nav-link"><i class="fa-solid fa-moon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100 position-relative">
+        <div class="container text-center text-lg-start z-index-1">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="text-gradient">Krishna Gadhiya</span></h1>
+                    <h2 class="h3 mb-4 text-muted">I am a <span class="typed-text text-primary"></span><span class="cursor">&nbsp;</span></h2>
+                    <p class="lead mb-5 text-secondary">M.Sc. Information Technology Student passionate about building data-driven applications and intuitive software.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+                        <a href="assets/resume.pdf" download="Krishna_Gadhiya_Resume.pdf" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">Download Resume</a>
+                        <a href="#projects" class="btn btn-outline-primary btn-lg rounded-pill px-4 glass-btn">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-secondary btn-lg rounded-pill px-4 glass-btn">Contact Me</a>
+                    </div>
+                    <div class="social-links d-flex gap-4 justify-content-center justify-content-lg-start">
+                        <a href="https://github.com/kp1398340-eng" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/krishna-gadhiya-186829423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a href="mailto:kp1398340@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center mb-5 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="hero-img-wrapper mx-auto">
+                        <img src="assets/profile.jpeg" alt="Krishna Gadhiya" class="img-fluid rounded-circle hero-img shadow-lg" onerror="this.src='https://via.placeholder.com/400'">
+                        <div class="floating-badge badge-1 glass-card"><i class="fa-brands fa-python text-warning"></i> Python</div>
+                        <div class="floating-badge badge-2 glass-card"><i class="fa-solid fa-database text-primary"></i> SQL</div>
+                        <div class="floating-badge badge-3 glass-card"><i class="fa-solid fa-code text-danger"></i> C++</div>
+                        <div class="floating-badge badge-4 glass-card"><i class="fa-solid fa-laptop-code text-info"></i> VS Code</div>
+                        <a href="https://github.com/kp1398340-eng" target="_blank" class="floating-badge badge-5 glass-card text-decoration-none" style="color: inherit;"><i class="fa-brands fa-github text-dark"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/krishna-gadhiya-186829423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="floating-badge badge-6 glass-card text-decoration-none" style="color: inherit;"><i class="fa-brands fa-linkedin text-primary"></i> LinkedIn</a>
+                        <div class="floating-badge badge-7 glass-card"><i class="fa-solid fa-book-journal-whills text-warning"></i> Jupyter</div>
+                        <div class="floating-badge badge-8 glass-card border-accent"><i class="fa-solid fa-robot text-accent"></i> Automation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section-padding bg-light-alt">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">About <span class="text-primary">Me</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center glass-card p-5 rounded-4" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-quote-left fa-3x text-primary mb-4 opacity-50"></i>
+                    <p class="lead text-secondary">
+                        I am an M.Sc. Information Technology student passionate about Python development, Data Analytics, SQL databases, and desktop application development. I enjoy solving real-world problems by building efficient software applications with clean code and user-friendly interfaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Technical <span class="text-primary">Skills</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Programming -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card glass-card h-100 p-4 rounded-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-code text-primary me-2"></i> Programming</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1"><span>Python</span><span>90%</span></div>
+                            <div class="progress"><div class="progress-bar bg-primary" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1"><span>SQL</span><span>85%</span></div>
+                            <div class="progress"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1"><span>C / C++</span><span>75%</span></div>
+                            <div class="progress"><div class="progress-bar bg-primary" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card glass-card h-100 p-4 rounded-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-database text-info me-2"></i> Database</h4>
+                        <div class="skill-tags">
+                            <span class="badge glass-badge text-dark mb-2 me-2">MySQL</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">MongoDB</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">Database Design</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">Query Writing</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">CRUD Operations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card glass-card h-100 p-4 rounded-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-chart-pie text-success me-2"></i> Data Analysis</h4>
+                        <div class="skill-tags">
+                            <span class="badge glass-badge text-dark mb-2 me-2">Pandas</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">NumPy</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">Data Cleaning</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">Data Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card glass-card h-100 p-4 rounded-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-laptop-code text-warning me-2"></i> Web Development</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1"><span>HTML5 & CSS3</span><span>85%</span></div>
+                            <div class="progress"><div class="progress-bar bg-warning" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span>70%</span></div>
+                            <div class="progress"><div class="progress-bar bg-warning" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop App Dev -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card glass-card h-100 p-4 rounded-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-desktop text-danger me-2"></i> Desktop Apps</h4>
+                        <div class="skill-tags">
+                            <span class="badge glass-badge text-dark mb-2 me-2">Python Tkinter</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">GUI Design</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">Event Handling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Concepts -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-card glass-card h-100 p-4 rounded-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-wrench text-secondary me-2"></i> Tools & Concepts</h4>
+                        <div class="skill-tags">
+                            <span class="badge glass-badge text-dark mb-2 me-2">Git / GitHub</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">VS Code</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">Jupyter / Colab</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">OOP</span>
+                            <span class="badge glass-badge text-dark mb-2 me-2">DSA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section-padding bg-light-alt">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Featured <span class="text-primary">Projects</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+
+            <!-- Project 1: Cafe Management -->
+            <div class="row align-items-center mb-5 project-row" data-aos="fade-up">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="project-img-wrapper rounded-4 overflow-hidden shadow-lg glass-card p-2">
+                        <img src="assets/cafelogo3.png" alt="Cafe Management System" class="img-fluid rounded-3" onerror="this.src='https://via.placeholder.com/600x400'">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h3 class="fw-bold mb-3">Cafe Management System</h3>
+                    <p class="text-secondary mb-4">Developed a desktop-based Cafe Management System using Python Tkinter GUI with MySQL Database. The application allows efficient management of customers, food menus, orders, billing, and reports through an interactive graphical interface.</p>
+                    <div class="mb-4">
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">Python</span>
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">Tkinter</span>
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">MySQL</span>
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">OOP</span>
+                    </div>
+                    <ul class="text-secondary list-unstyled mb-4 project-features">
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Secure Login System & Dashboard</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Order, Menu & Billing Management</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> CRUD Operations & Search</li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/kp1398340-eng/Cafe-Management-System" target="_blank" class="btn btn-outline-dark rounded-pill px-4"><i class="fa-brands fa-github me-2"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Zariyaa Jewelry -->
+            <div class="row align-items-center flex-lg-row-reverse project-row" data-aos="fade-up">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="project-img-wrapper rounded-4 overflow-hidden shadow-lg glass-card p-2">
+                        <img src="assets/zariyaa-logo.jpeg" alt="Zariyaa Jewelry" class="img-fluid rounded-3" onerror="this.src='https://via.placeholder.com/600x400'">
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-5">
+                    <h3 class="fw-bold mb-3">Zariyaa Jewelry Virtual Try-On</h3>
+                    <p class="text-secondary mb-4">Developed a web-based virtual jewellery try-on application that enables customers to preview jewellery digitally before purchasing. Designed an admin dashboard for managing jewellery products, customers, orders, and reports.</p>
+                    <div class="mb-4">
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">Python</span>
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">SQL</span>
+                        <span class="badge bg-primary-subtle text-primary me-2 mb-2">HTML/CSS</span>
+                    </div>
+                    <ul class="text-secondary list-unstyled mb-4 project-features">
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Admin Dashboard</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Product & Customer Management</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Order Management & Reports</li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/kp1398340-eng/Zariyaa-Jewelry-Virtual-Try-On" target="_blank" class="btn btn-outline-dark rounded-pill px-4"><i class="fa-brands fa-github me-2"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Education Timeline -->
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold"><i class="fa-solid fa-graduation-cap text-primary me-2"></i> Education</h2>
+                        <div class="underline mx-auto"></div>
+                    </div>
+                    <div class="timeline">
+                        <!-- M.Sc -->
+                        <div class="timeline-item glass-card p-4 rounded-4 mb-4">
+                            <span class="badge bg-primary mb-2">Pursuing</span>
+                            <h4 class="fw-bold mb-1">M.Sc. of Information Technology</h4>
+                            <h6 class="text-secondary mb-0">GLS University, Ahmedabad</h6>
+                        </div>
+                        
+                        <!-- B.Sc -->
+                        <div class="timeline-item glass-card p-4 rounded-4 mb-4">
+                            <span class="badge bg-success mb-2">March 2025</span>
+                            <h4 class="fw-bold mb-1">B.Sc. of Information Technology</h4>
+                            <h6 class="text-secondary mb-2">Saurashtra University, Rajkot</h6>
+                            <p class="text-muted mb-0 fw-medium">Final CGPA: 7.61 | SGPA: 8.17 | First Distinction</p>
+                        </div>
+
+                        <!-- HSC -->
+                        <div class="timeline-item glass-card p-4 rounded-4 mb-4">
+                            <h4 class="fw-bold mb-1">HSC [ Higher Secondary Certificate ]</h4>
+                            <h6 class="text-secondary mb-2">Shree Kanya Vidhyalaya - Rajkot</h6>
+                            <p class="text-muted mb-0 fw-medium">Percentage: 71.83% | Percentile: 90.15 PR</p>
+                        </div>
+
+                        <!-- SSC -->
+                        <div class="timeline-item glass-card p-4 rounded-4">
+                            <h4 class="fw-bold mb-1">SSC [ Secondary School Certificate ]</h4>
+                            <h6 class="text-secondary mb-2">Shree Kanya Vidhyalaya - Rajkot</h6>
+                            <p class="text-muted mb-0 fw-medium">Percentage: 78.29% | Percentile: 89.87 PR</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section-padding bg-light-alt text-center">
+        <div class="container">
+            <div class="section-title mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">My <span class="text-primary">Resume</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="glass-card p-5 rounded-4 d-inline-block mx-auto max-w-md" data-aos="zoom-in">
+                <i class="fa-regular fa-file-pdf fa-4x text-danger mb-4"></i>
+                <h4 class="mb-3">Interested in my profile?</h4>
+                <p class="text-secondary mb-4">Download my resume to get the full picture of my skills, experience, and academic background.</p>
+                <div class="d-flex gap-3 justify-content-center">
+                    <a href="assets/resume.pdf" download="Krishna_Gadhiya_Resume.pdf" class="btn btn-primary rounded-pill px-4"><i class="fa-solid fa-download me-2"></i> Download CV</a>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#resumeModal" class="btn btn-outline-dark rounded-pill px-4"><i class="fa-solid fa-eye me-2"></i> Preview</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Get In <span class="text-primary">Touch</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-info glass-card p-4 rounded-4 h-100">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-box bg-primary-subtle text-primary rounded-circle p-3 me-3">
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Email</h6>
+                                <a href="mailto:kp1398340@gmail.com" class="text-secondary text-decoration-none">kp1398340@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-box bg-success-subtle text-success rounded-circle p-3 me-3">
+                                <i class="fa-solid fa-phone fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Phone</h6>
+                                <a href="tel:+917862910946" class="text-secondary text-decoration-none">+91 7862910946</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-box bg-danger-subtle text-danger rounded-circle p-3 me-3">
+                                <i class="fa-solid fa-location-dot fa-lg"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Location</h6>
+                                <span class="text-secondary">Ahmedabad, Gujarat</span>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-4 opacity-25">
+                        
+                        <h6 class="fw-bold mb-3">Follow Me</h6>
+                        <div class="d-flex gap-3">
+                            <a href="https://github.com/kp1398340-eng" target="_blank" class="btn btn-outline-dark rounded-circle icon-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/krishna-gadhiya-186829423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="btn btn-outline-primary rounded-circle icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="contact-form glass-card p-4 p-md-5 rounded-4">
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control glass-input" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control glass-input" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control glass-input" id="subject" name="subject" placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control glass-input" id="message" name="message" placeholder="Leave a message here" style="height: 150px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 w-100 w-md-auto shadow-sm">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-0">Krishna Gadhiya</h5>
+                    <small class="text-white-50">Python Developer</small>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 text-center">
+                    <div class="d-inline-flex gap-3">
+                        <a href="#home" class="text-white-50 text-decoration-none hover-white">Home</a>
+                        <a href="#about" class="text-white-50 text-decoration-none hover-white">About</a>
+                        <a href="#projects" class="text-white-50 text-decoration-none hover-white">Projects</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end mb-2">
+                        <a href="https://github.com/kp1398340-eng" target="_blank" class="text-white-50 hover-white"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/krishna-gadhiya-186829423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="text-white-50 hover-white"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <small class="text-white-50">&copy; <span id="year"></span> Krishna Gadhiya. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="btn btn-primary rounded-circle shadow-lg" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Resume Preview Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content glass-card">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="resumeModalLabel">Resume Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 bg-light-alt" style="height: 75vh;">
+                    <iframe src="assets/resume.pdf" width="100%" height="100%" style="border: none;"></iframe>
+                </div>
+                <div class="modal-footer border-0">
+                    <a href="assets/resume.pdf" download="Krishna_Gadhiya_Resume.pdf" class="btn btn-primary rounded-pill px-4"><i class="fa-solid fa-download me-2"></i> Download</a>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js?v=3"></script>
+</body>
+</html>
